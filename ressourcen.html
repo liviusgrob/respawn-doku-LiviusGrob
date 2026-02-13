@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressourcen - RESPAWN</title>
+    <style>
+        :root {
+            --primary-dark: #0D47A1;
+            --primary: #1565C0;
+            --surface: #ffffff;
+            --background: #f8fafc;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 4px 12px rgba(13, 71, 161, 0.1);
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); color: var(--text); line-height: 1.6; }
+        .page-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .back-button {
+            display: inline-flex; align-items: center; gap: 10px; background: var(--primary); color: white;
+            text-decoration: none; padding: 12px 24px; border-radius: var(--radius); margin-bottom: 30px;
+            font-weight: 600; transition: background 0.3s;
+        }
+        .back-button:hover { background: var(--primary-dark); }
+        .section-header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white;
+            padding: 35px; border-radius: var(--radius); margin-bottom: 30px; text-align: center;
+        }
+        .section-title { font-size: 2.2rem; font-weight: 300; margin-bottom: 10px; }
+        .section-icon { font-size: 2.8rem; margin-bottom: 15px; }
+        .tools-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 25px 0;
+        }
+        .tool-card {
+            background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+            padding: 25px; transition: transform 0.2s;
+        }
+        .tool-card:hover { transform: translateY(-4px); border-color: var(--primary-light); }
+        .tool-name { font-size: 1.3rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 5px; }
+        .tool-type { font-size: 0.9rem; color: var(--text-light); font-style: italic; margin-bottom: 15px; }
+        .document-footer { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <a href="../index.html" class="back-button">← Zurück zur Startseite</a>
+        
+        <div class="section-header">
+            <div class="section-icon">🛠️</div>
+            <h1 class="section-title">Ressourcen & Werkzeuge</h1>
+            <p>Software und Lernressourcen für optimierten Workflow</p>
+        </div>
+
+        <div class="tools-grid">
+            <div class="tool-card">
+                <div style="font-size: 2.5rem; margin-bottom: 15px; color: var(--primary);">⛏️</div>
+                <div class="tool-name">Mineways</div>
+                <div class="tool-type">Standalone-Programm</div>
+                <p>Exportiert Bereiche aus Minecraft-Welten als 3D-Modelle (.obj, .stl) für Blender. Ideal für schnelles Erstellen von Landschaften und Gebäuden.</p>
+            </div>
+            <div class="tool-card">
+                <div style="font-size: 2.5rem; margin-bottom: 15px; color: var(--primary);">🎨</div>
+                <div class="tool-name">McPrep (Minecraft Prepper)</div>
+                <div class="tool-type">Blender-Addon</div>
+                <p>Importiert und verwaltet Minecraft-Modelle und -Texturen direkt in Blender. Automatisiert Materialzuweisung und optimiert den Workflow.</p>
+            </div>
+            <div class="tool-card">
+                <div style="font-size: 2.5rem; margin-bottom: 15px; color: var(--primary);">🤖</div>
+                <div class="tool-name">BSS Rig Pack</div>
+                <div class="tool-type">Rigging-/Model-Pack</div>
+                <p>Enthält vorgefertigte, animierbare Rigged-Modelle für Steve, Kreaturen und Items. Spart enorm viel Zeit beim Charakter-Setup.</p>
+            </div>
+        </div>
+
+        <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 25px; margin-top: 40px; border-radius: var(--radius);">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <div style="font-size: 2rem; color: #ffc107;">📺</div>
+                <div style="font-size: 1.3rem; font-weight: 700; color: #856404;">YouTube: Minecraft Animation Tutorials</div>
+            </div>
+            <p>Umfangreiche Playlist mit über 60 Tutorials zu allen Aspekten der Minecraft-Animation in Blender (Modellieren, Texturieren, Rigging, Animieren, Rendern).</p>
+        </div>
+
+        <footer class="document-footer">
+            <strong>RESPAWN: THE FIRST NIGHT</strong> – Ressourcen<br>
+            Livius Grob | Team G | Stand: 12. Februar 2026
+        </footer>
+    </div>
+</body>
+</html>

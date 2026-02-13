@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPAWN: The First Night - Web-Dokumentation</title>
+    <style>
+        :root {
+            --primary-dark: #0D47A1;
+            --primary: #1565C0;
+            --primary-light: #42A5F5;
+            --surface: #ffffff;
+            --background: #f8fafc;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 4px 12px rgba(13, 71, 161, 0.1);
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); color: var(--text); line-height: 1.6; }
+        .page-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .main-header { text-align: center; margin-bottom: 60px; }
+        .project-title { font-size: 3.2rem; font-weight: 300; color: var(--primary-dark); margin-bottom: 10px; letter-spacing: -0.5px; }
+        .project-subtitle { font-size: 1.3rem; color: var(--text-light); font-weight: 400; margin-bottom: 50px; }
+        .metadata-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px;
+            background: var(--surface); padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow);
+            max-width: 900px; margin: 0 auto; border: 1px solid var(--border);
+        }
+        .metadata-item { text-align: center; }
+        .metadata-label { display: block; font-size: 0.95rem; color: var(--text-light); margin-bottom: 8px; font-weight: 500; }
+        .metadata-value { font-size: 1.1rem; color: var(--primary-dark); font-weight: 600; }
+        .cards-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin: 50px 0;
+        }
+        .nav-card {
+            background: var(--surface); border-radius: var(--radius); padding: 35px 30px; text-decoration: none;
+            color: var(--text); display: block; transition: all 0.3s ease; border: 2px solid transparent;
+            box-shadow: var(--shadow); text-align: center; cursor: pointer; position: relative; overflow: hidden;
+        }
+        .nav-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: var(--primary); transform: scaleX(0); transition: transform 0.3s ease;
+        }
+        .nav-card:hover { transform: translateY(-6px); border-color: var(--primary-light); box-shadow: 0 12px 24px -8px rgba(13,71,161,0.15); }
+        .nav-card:hover::before { transform: scaleX(1); }
+        .card-icon { font-size: 2.8rem; margin-bottom: 20px; color: var(--primary); }
+        .card-title { font-size: 1.4rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; }
+        .card-desc { font-size: 0.95rem; color: var(--text-light); line-height: 1.6; }
+        .word-link-box {
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            border-left: 6px solid var(--primary);
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: var(--radius);
+            max-width: 800px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .word-button {
+            display: inline-block;
+            background: #0D47A1;
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            transition: background 0.3s, transform 0.2s;
+            border: 2px solid transparent;
+        }
+        .word-button:hover {
+            background: #1565C0;
+            transform: translateY(-2px);
+            border-color: white;
+        }
+        .document-footer { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.95rem; }
+        @media (max-width: 768px) { .project-title { font-size: 2.5rem; } .cards-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="main-header">
+            <h1 class="project-title">RESPAWN: THE FIRST NIGHT</h1>
+            <div class="project-subtitle">Animationsfilm - Komplette Projekt-Dokumentation</div>
+            
+            <div class="metadata-grid">
+                <div class="metadata-item"><span class="metadata-label">Projektleitung</span><span class="metadata-value">Livius Grob</span></div>
+                <div class="metadata-item"><span class="metadata-label">Team</span><span class="metadata-value">Team G</span></div>
+                <div class="metadata-item"><span class="metadata-label">Dokumentenstand</span><span class="metadata-value">12. Februar 2026</span></div>
+                <div class="metadata-item"><span class="metadata-label">Status</span><span class="metadata-value">Workflow-Test + Word-Integration</span></div>
+                <div class="metadata-item"><span class="metadata-label">Dokumentversion</span><span class="metadata-value">1.2</span></div>
+                <div class="metadata-item"><span class="metadata-label">Format</span><span class="metadata-value">Interaktive Web-Dokumentation</span></div>
+            </div>
+        </header>
+
+        <main>
+            <div style="text-align: center; margin: 40px 0;">
+                <div style="font-size: 2.8rem; margin-bottom: 20px;">🚀</div>
+                <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 20px;">Projektübersicht</h2>
+                <div style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
+                    <p><strong>Respawn: The First Night</strong> – Die erste Nacht in Minecraft als emotionaler Animationsfilm.</p>
+                    <p>Workflow-Status: ✅ Export via Mineways funktioniert | ⚠️ Rigging mit BSS Pack inkompatibel | ✅ Word-Integration abgeschlossen</p>
+                </div>
+            </div>
+
+            <div class="cards-grid">
+                <a href="pages/protokoll.html" class="nav-card">
+                    <div class="card-icon">📅</div>
+                    <div class="card-title">Projektprotokoll</div>
+                    <div class="card-desc">Chronologie aller Arbeitsschritte (aktuell: 12.02.2026 mit Word-Integration).</div>
+                </a>
+                <a href="pages/schritte.html" class="nav-card">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-title">Nächste Schritte</div>
+                    <div class="card-desc">Aktuelle Prioritäten: Rigging-Problem lösen.</div>
+                </a>
+                <a href="pages/ressourcen.html" class="nav-card">
+                    <div class="card-icon">🛠️</div>
+                    <div class="card-title">Ressourcen</div>
+                    <div class="card-desc">Mineways, McPrep, BSS Rig Pack, Tutorials.</div>
+                </a>
+                <a href="pages/technik.html" class="nav-card">
+                    <div class="card-icon">⚙️</div>
+                    <div class="card-title">Technik</div>
+                    <div class="card-desc">Blender-Kürzel, Render-Setup, Workflow, .url-Methode.</div>
+                </a>
+                <a href="pages/regiebuch.html" class="nav-card">
+                    <div class="card-icon">🎬</div>
+                    <div class="card-title">Regiebuch</div>
+                    <div class="card-desc">19 Szenen mit Kamera, Licht, Sound, Action.</div>
+                </a>
+            </div>
+
+            <!-- 🔗 WORD-DOKUMENT LINK – STARTET ZWINGEND WORD-DESKTOP-APP -->
+            <div class="word-link-box">
+                <span style="font-size: 36px;">📄</span>
+                <h3 style="color: #0D47A1; margin: 10px 0 5px 0;">Projektarbeit Word-Dokument</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 5px;">Vollständige schriftliche Ausarbeitung mit allen formalen Vorgaben.</p>
+                <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 15px;">
+                    (Arial 11pt, 1.5-facher Zeilenabstand, 9 Seiten inkl. Anhang)
+                </p>
+                <a href="ms-word:ofe|u|https://ictedubs-my.sharepoint.com/:w:/g/personal/livius_grob_stud_edubs_ch/IQBy64mo5qaqSr7lDbOSlP-GAdHhJsFa2REnKXB1Z_6ROIc?e=thTp0Z" 
+                   target="_blank" 
+                   class="word-button">
+                    📥 Word-Dokument in Desktop-App öffnen
+                </a>
+                <p style="font-size: 0.85rem; margin-top: 15px; color: #1565C0;">
+                    ⚡ Startet Microsoft Word auf Ihrem Computer (erfordert installierte Word-Desktop-Version).
+                </p>
+                <p style="font-size: 0.8rem; margin-top: 5px; color: #64748b;">
+                    Falls Word nicht startet: <a href="https://ictedubs-my.sharepoint.com/:w:/g/personal/livius_grob_stud_edubs_ch/IQBy64mo5qaqSr7lDbOSlP-GAdHhJsFa2REnKXB1Z_6ROIc?e=thTp0Z" target="_blank" style="color: #0D47A1;">Web-Version öffnen</a>
+                </p>
+            </div>
+
+            <!-- Kurz-Hinweis zur .url-Datei -->
+            <p style="text-align: center; font-size: 0.9rem; color: var(--text-light); margin-top: 20px;">
+                💡 <strong>Direktstart dieser Webseite:</strong> Doppelklick auf <code>Web-Doku.url</code> (im Hauptordner) – öffnet diese Seite garantiert im Browser.
+            </p>
+        </main>
+
+        <footer class="document-footer">
+            <strong>RESPAWN: THE FIRST NIGHT</strong> – Projekt-Dokumentation v1.2<br>
+            Livius Grob | Team G | Stand: 12. Februar 2026
+        </footer>
+    </div>
+</body>
+</html>

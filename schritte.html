@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nächste Schritte - RESPAWN</title>
+    <style>
+        :root {
+            --primary-dark: #0D47A1;
+            --primary: #1565C0;
+            --surface: #ffffff;
+            --background: #f8fafc;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 4px 12px rgba(13, 71, 161, 0.1);
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); color: var(--text); line-height: 1.6; }
+        .page-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .back-button {
+            display: inline-flex; align-items: center; gap: 10px; background: var(--primary); color: white;
+            text-decoration: none; padding: 12px 24px; border-radius: var(--radius); margin-bottom: 30px;
+            font-weight: 600; transition: background 0.3s;
+        }
+        .back-button:hover { background: var(--primary-dark); }
+        .section-header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white;
+            padding: 35px; border-radius: var(--radius); margin-bottom: 30px; text-align: center;
+        }
+        .section-title { font-size: 2.2rem; font-weight: 300; margin-bottom: 10px; }
+        .section-icon { font-size: 2.8rem; margin-bottom: 15px; }
+        .log-item {
+            background: var(--surface); border-left: 4px solid var(--primary); padding: 25px;
+            margin-bottom: 20px; border-radius: 0 var(--radius) var(--radius) 0; box-shadow: var(--shadow);
+        }
+        .document-footer { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <a href="../index.html" class="back-button">← Zurück zur Startseite</a>
+        
+        <div class="section-header">
+            <div class="section-icon">🎯</div>
+            <h1 class="section-title">Nächste Schritte & Prioritäten</h1>
+            <p>Stand: 12. Februar 2026 – Workflow getestet, Rigging inkompatibel, Word-Integration ✅</p>
+        </div>
+
+        <!-- 🔥 HOHE PRIORITÄT -->
+        <div class="log-item" style="border-left-color: #dc2626; background: #fef2f2;">
+            <div style="font-weight: 700; margin-bottom: 15px; color: #dc2626; font-size: 1.2rem;">
+                🔥 HOHE PRIORITÄT (sofort)
+            </div>
+            <ul>
+                <li><strong>Rigging-Problem analysieren:</strong> Alternative Rigs testen (z.B. „Minecraft Rig Simplified“) oder ältere McPrep-Version suchen</li>
+                <li><strong>YouTube-Tutorials gezielt:</strong> Fokus auf „BSS Rig Pack + McPrep 2026“ / Kompatibilitätslösungen</li>
+                <li><strong>Ersatzlösung:</strong> Charakter-Animation ohne BSS? Einzelteile manuell parenten?</li>
+            </ul>
+        </div>
+
+        <!-- 📚 MITTLERE PRIORITÄT -->
+        <div class="log-item" style="border-left-color: #ea580c; background: #fff7ed;">
+            <div style="font-weight: 700; margin-bottom: 15px; color: #ea580c; font-size: 1.2rem;">
+                📚 MITTLERE PRIORITÄT (Februar)
+            </div>
+            <ul>
+                <li>Nach erfolgreichem Rigging: erste <strong>Walking-Animation für Steve</strong></li>
+                <li><strong>Audio-Assets</strong> (Minecraft-Sounds) sammeln und organisieren</li>
+                <li><strong>Szene 0 Titel-Animation</strong> in Blender umsetzen</li>
+            </ul>
+        </div>
+
+        <!-- 📦 NIEDRIGE PRIORITÄT / ERLEDIGT -->
+        <div class="log-item" style="border-left-color: #2563eb; background: #eff6ff;">
+            <div style="font-weight: 700; margin-bottom: 15px; color: #2563eb; font-size: 1.2rem;">
+                📦 NIEDRIGE PRIORITÄT (März / Erledigt)
+            </div>
+            <ul>
+                <li><span style="color: #28a745; font-weight: bold;">✓ Erledigt:</span> Word-Integration mit .url-Datei – Web-Doku ist jetzt über Word-Link direkt im Browser aufrufbar</li>
+                <li>Szene 1 (Kinderzimmer) modellieren</li>
+                <li>Render-Pipeline für längere Szenen finalisieren</li>
+            </ul>
+        </div>
+
+        <footer class="document-footer">
+            <strong>RESPAWN: THE FIRST NIGHT</strong> – Nächste Schritte<br>
+            Livius Grob | Team G | Stand: 12. Februar 2026
+        </footer>
+    </div>
+</body>
+</html>

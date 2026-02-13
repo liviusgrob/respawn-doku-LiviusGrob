@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektprotokoll - RESPAWN</title>
+    <style>
+        :root {
+            --primary-dark: #0D47A1;
+            --primary: #1565C0;
+            --surface: #ffffff;
+            --background: #f8fafc;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 4px 12px rgba(13, 71, 161, 0.1);
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); color: var(--text); line-height: 1.6; }
+        .page-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .back-button {
+            display: inline-flex; align-items: center; gap: 10px; background: var(--primary); color: white;
+            text-decoration: none; padding: 12px 24px; border-radius: var(--radius); margin-bottom: 30px;
+            font-weight: 600; transition: background 0.3s; border: none; cursor: pointer; font-size: 1rem;
+        }
+        .back-button:hover { background: var(--primary-dark); }
+        .section-header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white;
+            padding: 35px; border-radius: var(--radius); margin-bottom: 30px; text-align: center;
+        }
+        .section-title { font-size: 2.2rem; font-weight: 300; margin-bottom: 10px; }
+        .section-icon { font-size: 2.8rem; margin-bottom: 15px; }
+        .log-item {
+            background: var(--surface); border-left: 4px solid var(--primary); padding: 25px;
+            margin-bottom: 20px; border-radius: 0 var(--radius) var(--radius) 0; box-shadow: var(--shadow);
+        }
+        .log-date { font-weight: 700; color: var(--primary-dark); font-size: 1.2rem; margin-bottom: 10px; }
+        .log-content ul { padding-left: 20px; margin-bottom: 15px; }
+        .log-content li { margin-bottom: 8px; }
+        .log-meta { font-size: 0.9rem; color: var(--text-light); font-style: italic; margin-top: 15px; padding-top: 15px; border-top: 1px dashed var(--border); }
+        .document-footer { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <a href="../index.html" class="back-button">← Zurück zur Startseite</a>
+        
+        <div class="section-header">
+            <div class="section-icon">📅</div>
+            <h1 class="section-title">Projektprotokoll</h1>
+            <p>Chronologie aller Arbeitsschritte und Entscheidungen</p>
+        </div>
+
+        <!-- Eintrag 20.11.2025 -->
+        <div class="log-item">
+            <div class="log-date">20. November 2025</div>
+            <div class="log-content">
+                <ul>
+                    <li>Genaue Themenfindung für den Animationsfilm</li>
+                    <li>Brainstorming mit anderen Schüler:innen</li>
+                    <li>Entwicklung eigener Idee: Minecraft-Kindheit einbeziehen</li>
+                </ul>
+            </div>
+            <div class="log-meta">Dauer: 45 Minuten</div>
+        </div>
+
+        <!-- Eintrag 04.12.2025 -->
+        <div class="log-item">
+            <div class="log-date">04. Dezember 2025</div>
+            <div class="log-content">
+                <ul>
+                    <li>Recherche zu Open-Source-Software für Animation</li>
+                    <li>Installation und erste Arbeiten in Blender</li>
+                    <li>Sichtung von 3D-Modellen</li>
+                    <li>Erste Storyline-Entwicklung</li>
+                </ul>
+            </div>
+            <div class="log-meta">Dauer: 45 Minuten</div>
+        </div>
+
+        <!-- Eintrag 11.12.2025 -->
+        <div class="log-item">
+            <div class="log-date">11. Dezember 2025</div>
+            <div class="log-content">
+                <ul>
+                    <li>Dokumente überprüfen und anlegen</li>
+                    <li>Erste Umsetzungen der Storyline in Blender</li>
+                    <li>Organisation der Projektdateien</li>
+                </ul>
+            </div>
+            <div class="log-meta">Dauer: 45 Minuten</div>
+        </div>
+
+        <!-- Eintrag 08.01.2026 -->
+        <div class="log-item">
+            <div class="log-date">08. Januar 2026</div>
+            <div class="log-content">
+                <ul>
+                    <li>Dokumente überprüfen und fortsetzen</li>
+                    <li>Storyline weiterführen und detaillieren</li>
+                    <li>Planung der nächsten Arbeitsschritte</li>
+                </ul>
+            </div>
+            <div class="log-meta">Dauer: 45 Minuten</div>
+        </div>
+
+        <!-- Eintrag 15.01.2026 -->
+        <div class="log-item">
+            <div class="log-date">15. Januar 2026</div>
+            <div class="log-content">
+                <ul>
+                    <li>Storyline weiter ausarbeiten</li>
+                    <li>Details und Szenenplanung konkretisieren</li>
+                    <li>Überarbeitung der bisherigen Entwürfe</li>
+                </ul>
+            </div>
+            <div class="log-meta">Dauer: 90 Minuten</div>
+        </div>
+
+        <!-- Eintrag 22.01.2026 -->
+        <div class="log-item">
+            <div class="log-date">22. Januar 2026</div>
+            <div class="log-content">
+                <ul>
+                    <li>Storyline in Word neu strukturiert und formatiert</li>
+                    <li>Projektprotokoll aktualisiert und formatiert</li>
+                    <li>Inhalte mit Projektjournal abgeglichen</li>
+                </ul>
+            </div>
+            <div class="log-meta">Arbeitszeit: 70 Minuten</div>
+        </div>
+
+        <!-- Eintrag 23.01.2026 -->
+        <div class="log-item">
+            <div class="log-date">23. Januar 2026</div>
+            <div class="log-content">
+                <ul>
+                    <li>Praktischer Neustart des Projekts nach technischen Problemen</li>
+                    <li>Neue Ordnerstruktur auf Desktop angelegt</li>
+                    <li>Test-Skript "szene_0_intro.py" erstellt</li>
+                    <li>Erster erfolgreicher Render-Test durchgeführt</li>
+                </ul>
+            </div>
+            <div class="log-meta">Arbeitszeit: 120 Minuten</div>
+            <div style="background: #d4edda; padding: 12px; margin-top: 15px; border-radius: 4px; border-left: 4px solid #28a745;">
+                <strong>Ergebnis:</strong> Erste Render-Tests erfolgreich.
+            </div>
+        </div>
+
+        <!-- KORRIGIERT: 29. Januar 2026 -->
+        <div class="log-item">
+            <div class="log-date">29. Januar 2026</div>
+            <div class="log-content">
+                <ul>
+                    <li>Minecraft.ttf Schriftart heruntergeladen und installiert</li>
+                    <li>Blender-Projekt für Szene 0 vorbereitet</li>
+                    <li><strong>Python-Skript für Szene 0 erstellt – RENDER FEHLGESCHLAGEN</strong></li>
+                    <li>Skript lieferte unerwartete Fehler; nach Recherche entschieden, <strong>auf manuelle Methode + spezialisierte Tools umzusteigen</strong></li>
+                    <li>Render-Einstellungen für 1080p 60fps trotzdem vorkonfiguriert</li>
+                </ul>
+            </div>
+            <div class="log-meta">Arbeitszeit: 95 Minuten</div>
+            <div style="background: #ffe6b3; padding: 12px; margin-top: 15px; border-radius: 4px; border-left: 4px solid #ff9800;">
+                <strong>⚠️ Änderung der Strategie:</strong> Automatisches Skript nicht weiterverfolgt. Stattdessen Fokus auf Mineways/McPrep-Workflow.
+            </div>
+        </div>
+
+        <!-- Eintrag 05.02.2026 -->
+        <div class="log-item">
+            <div class="log-date">05. Februar 2026</div>
+            <div class="log-content">
+                <ul>
+                    <li>Mühe mit Python-Skript für Szene 0 → Online-Lösungsrecherche</li>
+                    <li>YouTube-Playlist "Minecraft Animation Tutorials" (62 Videos) entdeckt</li>
+                    <li>Tools kennengelernt: <strong>Mineways</strong>, <strong>McPrep</strong>, <strong>BSS Rig Pack</strong></li>
+                    <li>Downloads getätigt und neue Projektordnerstruktur aufgesetzt</li>
+                </ul>
+            </div>
+            <div class="log-meta">Arbeitszeit: 70 Minuten</div>
+            <div style="background: #d4edda; padding: 12px; margin-top: 15px; border-radius: 4px; border-left: 4px solid #28a745;">
+                <strong>Ergebnis:</strong> Wertvolle Ressourcen für effizienten Workflow gefunden.
+            </div>
+        </div>
+
+        <!-- Eintrag 07.02.2026 -->
+        <div class="log-item">
+            <div class="log-date">07. Februar 2026</div>
+            <div class="log-content">
+                <ul>
+                    <li>Komplette Überarbeitung der Projekt-Dokumentation</li>
+                    <li>Neue Web-Struktur mit Karten-Navigation implementiert</li>
+                    <li>Word-kompatible Version erstellt und verlinkt</li>
+                    <li>Design auf schlichtes Blau-Theme umgestellt</li>
+                    <li>Protokoll und Regiebuch vervollständigt</li>
+                </ul>
+            </div>
+            <div class="log-meta">Arbeitszeit: 120 Minuten</div>
+            <div style="background: #d4edda; padding: 12px; margin-top: 15px; border-radius: 4px; border-left: 4px solid #28a745;">
+                <strong>Ergebnis:</strong> Dokumentation auf Version 1.0 aktualisiert und strukturiert.
+            </div>
+        </div>
+
+        <!-- AKTUALISIERT: 12. Februar 2026 -->
+        <div class="log-item">
+            <div class="log-date">12. Februar 2026</div>
+            <div class="log-content">
+                <ul>
+                    <li>Minecraft gestartet, neue Testwelt erstellt und relevante Bereiche markiert</li>
+                    <li>Welt mit <strong>Mineways</strong> exportiert und erfolgreich in Blender importiert</li>
+                    <li>Erster Test des Gesamt-Workflows: <strong>Minecraft → Mineways → Blender → McPrep</strong> funktioniert grundsätzlich</li>
+                    <li><strong>Schwierigkeiten beim Einfügen des BSS Rig Packs:</strong> Charakter-Rig verhielt sich anders als im Tutorial</li>
+                    <li>Beim Positionieren des Rigs an der Oberfläche zerfiel es in Einzelteile – <strong>vermutlich Kompatibilitätsproblem mit neuerer McPrep-Version</strong></li>
+                    <li>Nach intensiver Fehlersuche (Rig-Einstellungen, Parenting, Collection-Struktur) Arbeit vorerst abgebrochen</li>
+                    <li><strong>Web-Dokumentation mit Word verknüpft:</strong> Ordnerstruktur finalisiert, <strong>Web-Doku.url</strong> erstellt und in Word per Hyperlink eingebunden – funktioniert garantiert browserbasiert</li>
+                </ul>
+            </div>
+            <div class="log-meta">Arbeitszeit: 170 Minuten</div>
+            <div style="background: #d4edda; padding: 12px; margin-top: 15px; border-radius: 4px; border-left: 4px solid #28a745;">
+                <strong>✅ Erfolgreich abgeschlossen:</strong> Web-Doku ist jetzt über Word-Link direkt im Browser aufrufbar (kein Editor, kein DNS-Fehler).
+            </div>
+            <div style="background: #ffe6b3; padding: 12px; margin-top: 10px; border-radius: 4px; border-left: 4px solid #ff9800;">
+                <strong>⚠️ Offen:</strong> Charakter-Rigging erfordert weitere Recherche.
+            </div>
+        </div>
+
+        <footer class="document-footer">
+            <strong>RESPAWN: THE FIRST NIGHT</strong> – Projektprotokoll<br>
+            Livius Grob | Team G | Stand: 12. Februar 2026
+        </footer>
+    </div>
+</body>
+</html>
